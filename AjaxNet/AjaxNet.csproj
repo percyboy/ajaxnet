@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9AD42568-07A4-4D8B-9C6D-1FD54683EF4B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>AjaxNet</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AjaxNet</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <SignAssembly>false</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;NET20</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;NET20</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\AjaxCacheAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\AjaxMethodAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\AjaxAliasAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\AjaxIgnoreAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\AjaxPropertyAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\HttpSessionStateRequirement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\AjaxNoTypeUsageAttribute.cs" />
+    <Compile Include="Configuration\AjaxSettingsSectionHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ext4\IRestProxy.cs" />
+    <Compile Include="Ext4\QueryParams.cs" />
+    <Compile Include="Ext4\RestProxyHandler.cs" />
+    <Compile Include="Handler\AjaxAsyncHttpHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handler\AjaxHandlerFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handler\AjaxProcessors\ExtJSProcessor.cs" />
+    <Compile Include="Handler\AjaxProcessors\IFrameProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handler\AjaxProcessors\XmlHttpRequestProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handler\AjaxProcHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handler\AjaxSyncHttpHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handler\BaseJavaScriptHandler.cs" />
+    <Compile Include="Handler\ConverterJavaScriptHandler.cs" />
+    <Compile Include="Handler\EmbeddedJavaScriptHandler.cs" />
+    <Compile Include="Handler\HttpCompressionModule.cs" />
+    <Compile Include="Handler\AjaxRequestModule.cs" />
+    <Compile Include="Handler\Security\AjaxSecurity.cs" />
+    <Compile Include="Handler\TypeJavaScriptHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Handler\Security\AjaxSecurityProvider.cs" />
+    <Compile Include="Handler\TokenProvider.cs" />
+    <Compile Include="Handler\AjaxProcessors\AjaxProcessor.cs" />
+    <Compile Include="Handler\TypeJavaScriptGenerator.cs" />
+    <Compile Include="JSON\Converters\DataRowConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\Converters\DataRowViewConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\Converters\DataSetConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\Converters\DataTableConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\Converters\DataViewConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\Converters\DateTimeConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\Converters\HtmlControlConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\Converters\IDictionaryConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\Converters\IEnumerableConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\Converters\IListConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\JavaScriptObjectConverter.cs" />
+    <Compile Include="JSON\Converters\DecimalConverter.cs" />
+    <Compile Include="JSON\Converters\ExceptionConverter.cs" />
+    <Compile Include="JSON\Converters\EnumConverter.cs" />
+    <Compile Include="JSON\Converters\GuidConverter.cs" />
+    <Compile Include="JSON\Converters\PrimitiveConverter.cs" />
+    <Compile Include="JSON\Converters\StringConverter.cs" />
+    <Compile Include="JSON\Converters\NameValueCollectionConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\Converters\JavaScriptConverter.cs" />
+    <Compile Include="JSON\JavaScriptObjects\IJavaScriptObject.cs" />
+    <Compile Include="JSON\JavaScriptConverterList.cs" />
+    <Compile Include="JSON\JavaScriptDeserializer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\JavaScriptObjects\JavaScriptArray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\JavaScriptObjects\JavaScriptBoolean.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\JavaScriptObjects\JavaScriptNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\JavaScriptObjects\JavaScriptObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\JavaScriptObjects\JavaScriptString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\JavaScriptObjects\JavaScriptSource.cs" />
+    <Compile Include="JSON\JavaScriptSerializer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\JavaScriptUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JSON\JSONParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\Decryptor.cs" />
+    <Compile Include="Security\DecryptTransformer.cs" />
+    <Compile Include="Security\Encryptor.cs" />
+    <Compile Include="Security\EncryptTransformer.cs" />
+    <Compile Include="Security\WebDecrypter.cs" />
+    <Compile Include="Security\WebEncrypter.cs" />
+    <Compile Include="Services\AuthenticationService.cs" />
+    <Compile Include="Services\ProfileService.cs" />
+    <Compile Include="Utilities\AjaxSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\CacheInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\Constant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\MD5Helper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\Utility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Managment\WebAjaxErrorEvent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build_1.1.bat" />
+    <None Include="build_2.0.bat" />
+    <None Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build.bat" />
+    <None Include="build_json.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="core.ext4.js" />
+    <Content Include="core.ext4.src.js" />
+    <Content Include="core.src.js" />
+    <EmbeddedResource Include="core.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
