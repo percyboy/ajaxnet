@@ -13,4 +13,4 @@ at the HTML head today, Why not based on it? )
 3) A new HttpHandler for ExtJS's RESTful store. Works more smoothly with ExtJS's grid, combobox, form load & save etc.
 
 4) A few bug(?) fixes. For example, I don't think the behavior of original JSON serializer/deserializer
-for Nullable<DateTime> is as same as my expectation.
+for Nullable\<DateTime\> is as same as my expectation.
